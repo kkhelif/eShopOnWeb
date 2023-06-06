@@ -9,7 +9,7 @@ env:
   RESOURCE-GROUP: rg-az400-eshoponweb-KaisKhelif
   LOCATION: eastus
   TEMPLATE-FILE: .azure/bicep/webapp.bicep
-  SUBSCRIPTION-ID: 42b2374d-f1fc-42ee-a9df-04a2a00bc8f6
+  SUBSCRIPTION-ID: 79adcec3-7209-48ed-9d69-aa9e4715aae6
   WEBAPP-NAME: az400-webapp-KaisKKhelif
 
 
