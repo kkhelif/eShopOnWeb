@@ -80,10 +80,13 @@ jobs:
     - name: deploy
       uses: azure/arm-deploy@v1
       with:
-        subscriptionId: ${{ env.SUBSCRIPTION-ID }}
-        resourceGroupName: ${{ env.RESOURCE-GROUP }}
+        #subscriptionId: ${{ env.SUBSCRIPTION-ID }}
+        subscriptionId: 42b2374d-f1fc-42ee-a9df-04a2a00bc8f6
+        #resourceGroupName: ${{ env.RESOURCE-GROUP }}
+        resourceGroupName: rg-az400-eshoponweb-KaisKhelif
         template: bicep-template/webapp.bicep
-        parameters: 'webAppName=${{ env.WEBAPP-NAME }} location=${{ env.LOCATION }}'
+        #parameters: 'webAppName=${{ env.WEBAPP-NAME }} location=${{ env.LOCATION }}'
+        parameters: 'webAppName=${{ env.WEBAPP-NAME }} location=${eastus}'
         failOnStdErr: false   
     
     # Publish website to Azure App Service (WebApp)
